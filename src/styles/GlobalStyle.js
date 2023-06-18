@@ -147,10 +147,10 @@ const GlobalStyle = createGlobalStyle`
       margin-top: 0;
       border-bottom: 70px solid transparent;
     }
-    .slanted-1 { border-left: 98vw solid var(--pink); }
-    .slanted-2 { border-right: 98vw solid var(--blue); }
-    .slanted-3 { border-left: 98vw solid var(--purple); }
-    .slanted-4 { border-right: 98vw solid var(--green); }
+    .slanted-1 { border-left: 95vw solid var(--pink); }
+    .slanted-2 { border-right: 95vw solid var(--blue); }
+    .slanted-3 { border-left: 95vw solid var(--purple); }
+    .slanted-4 { border-right: 95vw solid var(--green); }
 
     .section-wrapper {
       margin: 0 auto;
