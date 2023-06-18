@@ -98,6 +98,11 @@ const ProjectsSection = styled.section`
 					text-align: center;
 					padding: 16px;
 					gap: 12px;
+					/* Show content on mobile (displays on hover for desktops) */
+					@media (max-width: 768px) {
+						background-color: rgba(120, 73, 112, 0.5);
+						opacity: 1;
+					}
 					h5 {
 						margin: 0;
 					}
