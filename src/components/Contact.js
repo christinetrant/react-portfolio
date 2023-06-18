@@ -92,7 +92,7 @@ export default function Contact() {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", name, email, message })
+        body: encode({ "form-name": "contact", ...this.state })
       })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
@@ -100,7 +100,7 @@ export default function Contact() {
       e.preventDefault();
     };
 
-    // const handleChange = e => this.setState({ [e.target.name]: e.target.value });
+    const handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 	return (
 		<ContactSection id='contact' className='contact'>
@@ -142,20 +142,13 @@ export default function Contact() {
 							</li>
 						</ul>
 
-						{/* <form onSubmit={this.handleSubmit}>
-							Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
-								Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
-								Message: <textarea name="message" value={message} onChange={this.handleChange} />
-							<button type="submit">Send</button>
-							</form> */}
-						<form netlify netlify-honeypot="bot-field" name='contact' onSubmit={handleSubmit}>
+						{/* <form netlify netlify-honeypot="bot-field" name='contact' onSubmit={handleSubmit}>
 							<div className='input-container'>
 								<input
 									type='text'
 									id='name'
 									name='name'
 									placeholder='Name'
-									value={name}
 									className=''
 									onChange={(e) => setName(e.target.value)}
 								/>
@@ -166,7 +159,6 @@ export default function Contact() {
 									id='email'
 									name='email'
 									placeholder='Email'
-									value={email}
 									onChange={(e) => setEmail(e.target.value)}
 								/>
 							</div>
@@ -175,7 +167,6 @@ export default function Contact() {
 									id='message'
 									name='message'
                   placeholder='Message'
-									value={message}
                   style={{width:'100%'}}
 									onChange={(e) => setMessage(e.target.value)}
 								/>
@@ -186,9 +177,7 @@ export default function Contact() {
 									Send
 								</button>
 							</div>
-						</form>
-
-
+						</form> */}
 					</article>
 				</div>
 			</div>
