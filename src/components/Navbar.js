@@ -57,7 +57,7 @@ const NavbarStyles = styled.header`
 			flex-flow: wrap;
 			align-items: center;
 			justify-content: center;
-			font-size: 1.25rem;
+			font-size: var(--body-font-size-mobile);
 			@media (max-width: 768px) {
 				/* margin-right: auto; */
 				/* margin-left: 16px; */

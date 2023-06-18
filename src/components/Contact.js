@@ -5,6 +5,7 @@ import { FaRegPaperPlane } from 'react-icons/fa';
 import { TbBrandLinkedin } from 'react-icons/tb';
 import styled from 'styled-components';
 import formSubmitIcon from '../assets/images/paper-plane-solid.svg';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const ContactSection = styled.section`
 	form {
@@ -29,6 +30,7 @@ const ContactSection = styled.section`
 			background-color: var(--background);
 			padding: 1rem;
 			padding-right: 3rem;
+      font-family: 'Josefin Sans', sans-serif;
 			font-size: 0.875rem;
 			line-height: 1.25rem;
 			width: 300px;
@@ -80,6 +82,7 @@ export default function Contact() {
 	return (
 		<ContactSection id='contact' className='contact'>
 			<div className='section-header section-4'>
+        <HiOutlineMail className='icon' />
 				<h2>Contact</h2>
 			</div>
 			<div className='slanted slanted-4'></div>
@@ -140,6 +143,7 @@ export default function Contact() {
 								<textarea
 									id='message'
 									name='message'
+                  placeholder='Message'
                   style={{width:'100%'}}
 									onChange={(e) => setMessage(e.target.value)}
 								/>

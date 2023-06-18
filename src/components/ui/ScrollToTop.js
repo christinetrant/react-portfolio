@@ -19,7 +19,8 @@ const ScrollToTopButton = styled.button`
 	background: transparent;
 	font-size: 2.5rem;
 	@media (max-width: 575px) {
-		font-size: 1.5rem;
+		font-size: var(--body-font-size);
+		
 	}
 	/* Tooltip text */
 	.scrollTooltip {
@@ -33,7 +34,7 @@ const ScrollToTopButton = styled.button`
 		padding: 0;
 		border-radius: 6px;
 		font-family: 'Josefin Sans', sans-serif;
-		font-size: 1.5em;
+		font-size: var(--body-font-size);
 		text-align: center;
 		background-color: transparent;
 		color: #ce4c6e;
