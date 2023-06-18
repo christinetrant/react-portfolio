@@ -69,6 +69,9 @@ const ProjectsSection = styled.section`
 					width: 100%;
 					filter: blur(0px);
 					border-radius: 5px;
+					@media (max-width: 575px) {
+						filter: blur(2px);
+					}
 				}
 				.image-placeholder {
 					background-color: rgba(var(--purple-rgb), 0.8);
