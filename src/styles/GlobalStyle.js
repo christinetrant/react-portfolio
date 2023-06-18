@@ -170,6 +170,9 @@ const GlobalStyle = createGlobalStyle`
       > div {
         width: 100%;
         padding: 20px 50px;
+					@media (max-width: 575px) {
+            padding: 20px 32px;
+          }
         p { 
           display: flex;
           align-items: center;

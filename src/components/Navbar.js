@@ -43,14 +43,10 @@ const NavbarStyles = styled.header`
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 
-			@media (max-width: 768px) {
-				margin-bottom: 0;
+			@media (max-width: 575px) {
+				font-size: 3rem;
+				margin-bottom: 1rem;
 			}
-			/* a {
-      margin-left: 12px;
-      font-size: 20px;
-      line-height: 175%;
-    } */
 		}
 		.navbar {
 			display: flex;
@@ -59,14 +55,15 @@ const NavbarStyles = styled.header`
 			justify-content: center;
 			font-size: var(--body-font-size-mobile);
 			@media (max-width: 768px) {
-				/* margin-right: auto; */
-				/* margin-left: 16px; */
-				padding: 4px 16px;
-				/* border-left-width: 1px; */
+				padding: 4px 0;
+			
 			}
 			a {
 				&:not(:last-child) {
 					margin-right: 20px;
+					@media (max-width: 575px) {
+						margin-right: 8px;
+					}
 				}
 
 				/* &:hover {
