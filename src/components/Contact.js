@@ -60,24 +60,47 @@ export default function Contact() {
 	const [email, setEmail] = React.useState('');
 	const [message, setMessage] = React.useState('');
 
-	function encode(data) {
-		return Object.keys(data)
-			.map(
-				(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-			)
-			.join('&');
-	}
+	// function encode(data) {
+	// 	return Object.keys(data)
+	// 		.map(
+	// 			(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+	// 		)
+	// 		.join('&');
+	// }
 
-	function handleSubmit(e) {
-		e.preventDefault();
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: encode({ 'form-name': 'contact', name, email, message }),
-		})
-			.then(() => alert('Message sent!'))
-			.catch((error) => alert(error));
-	}
+	// function handleSubmit(e) {
+	// 	e.preventDefault();
+	// 	fetch('/', {
+	// 		method: 'POST',
+	// 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+	// 		body: encode({ 'form-name': 'contact', name, email, message }),
+	// 	})
+	// 		.then(() => alert('Message sent!'))
+	// 		.catch((error) => alert(error));
+	// }
+
+
+	const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
+    /* Here’s the juicy bit for posting the form submission */
+
+    const handleSubmit = e => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", name, email, message })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+
+      e.preventDefault();
+    };
+
+    // const handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 	return (
 		<ContactSection id='contact' className='contact'>
@@ -119,13 +142,20 @@ export default function Contact() {
 							</li>
 						</ul>
 
-						<form netlify name='contact' onSubmit={handleSubmit}>
+						{/* <form onSubmit={this.handleSubmit}>
+							Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+								Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+								Message: <textarea name="message" value={message} onChange={this.handleChange} />
+							<button type="submit">Send</button>
+							</form> */}
+						<form netlify netlify-honeypot="bot-field" name='contact' onSubmit={handleSubmit}>
 							<div className='input-container'>
 								<input
 									type='text'
 									id='name'
 									name='name'
 									placeholder='Name'
+									value={name}
 									className=''
 									onChange={(e) => setName(e.target.value)}
 								/>
@@ -136,6 +166,7 @@ export default function Contact() {
 									id='email'
 									name='email'
 									placeholder='Email'
+									value={email}
 									onChange={(e) => setEmail(e.target.value)}
 								/>
 							</div>
@@ -144,6 +175,7 @@ export default function Contact() {
 									id='message'
 									name='message'
                   placeholder='Message'
+									value={message}
                   style={{width:'100%'}}
 									onChange={(e) => setMessage(e.target.value)}
 								/>
@@ -155,6 +187,8 @@ export default function Contact() {
 								</button>
 							</div>
 						</form>
+
+
 					</article>
 				</div>
 			</div>
