@@ -133,10 +133,10 @@ export const skills = [
 	{ type: 'dev', name: 'Vue' },
 	{ type: 'dev', name: 'Node.js' },
 	{ type: 'dev', name: 'WordPress' },
-	{ type: 'dev', name: 'Headless CMS (Sanity, Strapi)' },
+	{ type: 'dev', name: 'Headless CMS (Sanity, Strapi, Contentful)' },
 	{ type: 'dev', name: 'PHP' },
 	{ type: 'dev', name: 'Version Control (Git)' },
-	{ type: 'dev', name: 'API Integration' },
+	{ type: 'dev', name: 'API Integration / GraphQL' },
 	{ type: 'design', name: 'Figma' },
 	{ type: 'design', name: 'Adobe XD' },
 ];
