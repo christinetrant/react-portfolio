@@ -56,51 +56,31 @@ const ContactSection = styled.section`
 `;
 
 export default function Contact() {
-	const [name, setName] = React.useState('');
-	const [email, setEmail] = React.useState('');
-	const [message, setMessage] = React.useState('');
+	// const [name, setName] = React.useState('');
+	// const [email, setEmail] = React.useState('');
+	// const [message, setMessage] = React.useState('');
 
-	// function encode(data) {
-	// 	return Object.keys(data)
-	// 		.map(
-	// 			(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-	// 		)
-	// 		.join('&');
-	// }
+	// const encode = (data) => {
+  //   return Object.keys(data)
+  //       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+  //       .join("&");
+  // }
 
-	// function handleSubmit(e) {
-	// 	e.preventDefault();
-	// 	fetch('/', {
-	// 		method: 'POST',
-	// 		headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-	// 		body: encode({ 'form-name': 'contact', name, email, message }),
-	// 	})
-	// 		.then(() => alert('Message sent!'))
-	// 		.catch((error) => alert(error));
-	// }
+  //   /* Here’s the juicy bit for posting the form submission */
 
+  //   const handleSubmit = e => {
+  //     fetch("/", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //       body: encode({ "form-name": "contact", ...this.state })
+  //     })
+  //       .then(() => alert("Success!"))
+  //       .catch(error => alert(error));
 
-	const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+  //     e.preventDefault();
+  //   };
 
-    /* Here’s the juicy bit for posting the form submission */
-
-    const handleSubmit = e => {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...this.state })
-      })
-        .then(() => alert("Success!"))
-        .catch(error => alert(error));
-
-      e.preventDefault();
-    };
-
-    const handleChange = e => this.setState({ [e.target.name]: e.target.value });
+  //   const handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 	return (
 		<ContactSection id='contact' className='contact'>

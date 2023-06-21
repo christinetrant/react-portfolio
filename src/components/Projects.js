@@ -168,7 +168,7 @@ export default function Projects() {
 			<div className='section-wrapper'>
 				<div>
 					<div className='gallery'>
-						{projects.map((project) => {
+						{projects.map((project, index) => {
 							const {
 								title,
 								description,
@@ -183,6 +183,7 @@ export default function Projects() {
 							} = project;
 							return (
 								<article
+									key={index}
 									className={
 										featuredProject
 											? 'gallery-item gallery-item_lg'
