@@ -4,7 +4,8 @@ const GlobalStyle = createGlobalStyle`
   :root {
     /**  COLORS  **/
     --black: #000000;
-    --background: #fafafa;
+    /* --background: #fafafa; */
+    --background: #f0f0f0;
     --white: #f1f1f1;
 
     --body-color: --black;
@@ -161,7 +162,7 @@ const GlobalStyle = createGlobalStyle`
 
     .section-wrapper {
       margin: 0 auto;
-      max-width: 1200px;
+      max-width: 1400px;
       display: flex;
       align-items: center;
       justify-content: center;
