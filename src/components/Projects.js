@@ -28,9 +28,13 @@ const ProjectsSection = styled.section`
 			/**
       * User input values.
       */
-			--grid-layout-gap: 15px;
 			--grid-column-count: 4;
-			--grid-item--min-width: 250px;
+			--grid-layout-gap: 24px;
+			--grid-item--min-width: 275px;
+			@media (max-width: 575px) {
+				--grid-layout-gap: 15px;
+				--grid-item--min-width: 250px;
+			}
 
 			/**
       * Calculated values.

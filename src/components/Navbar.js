@@ -9,9 +9,9 @@ const NavbarStyles = styled.header`
 	/************************/
 
 	background: var(--background);
-	display: sticky;
+	/* display: sticky;
 	top: 0;
-	z-index: 10;
+	z-index: 10; */
 	.container {
 		width: 100%;
 		display: flex;
