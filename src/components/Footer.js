@@ -23,6 +23,7 @@ const FooterStyles = styled.footer`
 		width: 100%;
 		gap: 12px;
 		@media (max-width: 575px) {
+			padding: 20px;
 			justify-content: center;
 			flex-direction: column;
 			align-content: center;
@@ -67,6 +68,7 @@ const Footer = () => {
 				<div className='social-links'>
 					<a
 						href='http://ie.linkedin.com/in/christinetrant'
+						aria-label="My LinkedIn"
 						target='_blank'
 						rel='noreferrer'
 						className='green'>
@@ -74,6 +76,7 @@ const Footer = () => {
 					</a>
 					<a
 						href='https://github.com/christinetrant'
+						aria-label="My Github"
 						target='_blank'
 						rel='noreferrer'
 						className='green'>

@@ -206,7 +206,7 @@ export default function Projects() {
 										</div>
 									)}
 									<div className='gallery-item_content'>
-										<h4>{title}</h4>
+										<h3>{title}</h3>
 										{description && <p>{description}</p>}
 										{tech && <p>{tech}</p>}
 										<div className='btn-holder'>
