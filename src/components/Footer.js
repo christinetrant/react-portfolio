@@ -8,7 +8,7 @@ const FooterStyles = styled.footer`
 	align-items: center;
 	font-size: 1rem;
 	text-align: center;
-	color: #6c757d;
+	color: black;
 	a {
 		&:hover,
 		&:active,
@@ -27,10 +27,15 @@ const FooterStyles = styled.footer`
 			flex-direction: column;
 			align-content: center;
 		}
+		a {
+			@media (max-width: 575px) {
+				font-size: 1.2rem;
+			}
+		}
 		nav {
 			display: inline-flex;
 			justify-content: center;
-			gap: 8px;
+			gap: 12px;
 			@media (max-width: 575px) {
 				flex-wrap: wrap;
 			}
@@ -43,9 +48,6 @@ const FooterStyles = styled.footer`
 				transition: color 0.3s ease-in-out;
 				&:hover {
 					color: var(--purple);
-				}
-				@media (max-width: 575px) {
-					font-size: 1.1rem;
 				}
 			}
 		}

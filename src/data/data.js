@@ -8,13 +8,13 @@ import colorConvertMobile from '../assets/images/gallery/colorconvert-mobile.png
 import bgGeneratorDesktop from '../assets/images/gallery/generator-desktop.png';
 import bgGeneratorMobile from '../assets/images/gallery/generator-mobile.png';
 import bromleyDesktop from '../assets/images/gallery/bromley-desktop.png';
-import bromleyMobile from '../assets/images/gallery/bromley-mobile.png';
+// import bromleyMobile from '../assets/images/gallery/bromley-mobile.png';
 import bwwDesktop from '../assets/images/gallery/bww-desktop.png';
-import bwwMobile from '../assets/images/gallery/bww-mobile.png';
+// import bwwMobile from '../assets/images/gallery/bww-mobile.png';
 import theResidentDesktop from '../assets/images/gallery/the-resident-desktop.png';
-import theResidentMobile from '../assets/images/gallery/the-resident-mobile.png';
+// import theResidentMobile from '../assets/images/gallery/the-resident-mobile.png';
 import ghgDesktop from '../assets/images/gallery/ghg-desktop.png';
-import ghgMobile from '../assets/images/gallery/ghg-mobile.png';
+// import ghgMobile from '../assets/images/gallery/ghg-mobile.png';
 
 // import bgGeneratorDesktop from '../assets/images/gallery/generator-desktop.png';
 // import bgGeneratorMobile from '../assets/images/gallery/generator-mobile.png';
@@ -69,7 +69,7 @@ export const projects = [
 		tech: 'Wordpress, PHP, SCSS, Javascript',
 		description: '',
 		desktopImage: bromleyDesktop,
-		mobileImage: bromleyMobile,
+		mobileImage: bromleyDesktop,
 		codeRepo: null,
 		link: 'https://bromleycourthotel.co.uk/',
 		featuredProject: false,
@@ -80,7 +80,7 @@ export const projects = [
 		tech: 'Wordpress, PHP, SCSS, Javascript',
 		description: '',
 		desktopImage: bwwDesktop,
-		mobileImage: bwwMobile,
+		mobileImage: bwwDesktop,
 		codeRepo: null,
 		link: 'https://bodyworkswest.co.uk/',
 		featuredProject: true,
@@ -91,7 +91,7 @@ export const projects = [
 		tech: 'Wordpress, PHP, SCSS, Javascript',
 		description: '',
 		desktopImage: theResidentDesktop,
-		mobileImage: theResidentMobile,
+		mobileImage: theResidentDesktop,
 		codeRepo: null,
 		link: 'https://www.residenthotels.com/',
 		featuredProject: true,
@@ -102,7 +102,7 @@ export const projects = [
 		tech: 'Gatsby, Styled Components, GraphQl, Sanity CMS, Netlify',
 		description: 'Coming Soon! A new bespoke design for the Good Hotel Guide',
 		desktopImage: ghgDesktop,
-		mobileImage: ghgMobile,
+		mobileImage: ghgDesktop,
 		codeRepo: '',
 		link: '',
 	},
