@@ -10,12 +10,12 @@ const GlobalStyle = createGlobalStyle`
 
     --body-color: --black;
     --pink: #ce4c6e;
-    --blue: #3c80a3;
-    --blue-rgb: 60, 128, 163;
+    --blue: #3C7B9A;
+    --blue-rgb: 60, 123, 154;
     --purple: #784970;
     --purple-rgb: 120, 73, 112;
-    --green: #51a689;
-    --green-rgb: 81, 166, 137;
+    --green: #4A967D;
+    --green-rgb: 74, 150, 125;
 
     --body-font-size: 1.5rem;
     --body-font-size-mobile: 1.25rem;
