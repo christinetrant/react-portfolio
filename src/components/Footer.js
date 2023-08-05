@@ -23,7 +23,6 @@ const FooterStyles = styled.footer`
 		width: 100%;
 		gap: 12px;
 		@media (max-width: 575px) {
-			padding: 20px;
 			justify-content: center;
 			flex-direction: column;
 			align-content: center;
@@ -32,6 +31,9 @@ const FooterStyles = styled.footer`
 			display: inline-flex;
 			justify-content: center;
 			gap: 8px;
+			@media (max-width: 575px) {
+				flex-wrap: wrap;
+			}
 		}
 		.social-links {
 			display: flex;
@@ -41,6 +43,9 @@ const FooterStyles = styled.footer`
 				transition: color 0.3s ease-in-out;
 				&:hover {
 					color: var(--purple);
+				}
+				@media (max-width: 575px) {
+					font-size: 1.1rem;
 				}
 			}
 		}

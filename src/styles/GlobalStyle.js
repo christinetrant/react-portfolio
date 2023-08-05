@@ -10,8 +10,8 @@ const GlobalStyle = createGlobalStyle`
 
     --body-color: --black;
     --pink: #ce4c6e;
-    --blue: #3C7B9A;
-    --blue-rgb: 60, 123, 154;
+    --blue: #346A85;
+    --blue-rgb: 52, 106, 133;
     --purple: #784970;
     --purple-rgb: 120, 73, 112;
     --green: #4A967D;

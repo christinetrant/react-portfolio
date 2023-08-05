@@ -8,6 +8,11 @@ import formSubmitIcon from '../assets/images/paper-plane-solid.svg';
 import { HiOutlineMail } from 'react-icons/hi';
 
 const ContactSection = styled.section`
+	.contact {
+		.contact-items {
+			font-weight: bold;
+		}
+	}
 	form {
 		width: 100%;
 		/* margin: 0 auto; */
@@ -99,17 +104,17 @@ export default function Contact() {
 						</p>
 						<ul>
 							<li>
-								<h4>
+								<p className='contact-items'>
 									<FaRegPaperPlane className='icon-marker green' />
 									<a
 										className='slide-in'
 										href='mailto:christinetrant@gmail.com'>
 										christinetrant@gmail.com
 									</a>
-								</h4>
+								</p>
 							</li>
 							<li>
-								<h4>
+								<p className='contact-items'>
 									<TbBrandLinkedin className='icon-marker green' />
 									<a
 										href='http://ie.linkedin.com/in/christinetrant'
@@ -118,7 +123,7 @@ export default function Contact() {
 										className='slide-in'>
 										linkedin.com/in/christinetrant
 									</a>
-								</h4>
+								</p>
 							</li>
 						</ul>
 
