@@ -210,12 +210,13 @@ const GlobalStyle = createGlobalStyle`
   text-decoration: none;
   overflow: hidden;
   position: relative;
+  font-weight: bold;
   &.blue-btn { 
-    color: var(--white);
+    color: white;
     background-color: rgba(var(--blue-rgb), 0.9); 
   }
   &.green-btn {
-    color: var(--white);
+    color: white;
     background-color: rgba(var(--green-rgb), 0.9);
 
   }
