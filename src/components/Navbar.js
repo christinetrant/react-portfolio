@@ -56,7 +56,7 @@ const NavbarStyles = styled.header`
 			font-size: var(--body-font-size-mobile);
 			@media (max-width: 768px) {
 				padding: 4px 0;
-			
+				gap: 12px;
 			}
 			a {
 				&:not(:last-child) {
