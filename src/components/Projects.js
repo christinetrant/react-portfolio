@@ -60,19 +60,20 @@ const ProjectsSection = styled.section`
 				align-items: center;
 				display: flex;
 				justify-content: center;
-				box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
-					rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-				&:hover {
-					box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-						rgba(0, 0, 0, 0.05) 0px 5px 10px;
-				}
+
 				> img,
 				.image-placeholder {
 					height: 100%;
 					object-fit: cover;
 					width: 100%;
-					filter: blur(0px);
 					border-radius: 5px;
+					filter: blur(0px);
+					box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+						rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+					&:hover {
+						box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+							rgba(0, 0, 0, 0.05) 0px 5px 10px;
+					}
 					@media (max-width: 575px) {
 						filter: blur(2px);
 					}
