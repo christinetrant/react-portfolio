@@ -1,23 +1,23 @@
 // src/data.js
-import concentrationDesktop from '../assets/images/gallery/memory-desktop.png';
-import concentrationMobile from '../assets/images/gallery/memory-desktop.png';
-import robofriendsDesktop from '../assets/images/gallery/robofriends-desktop.png';
-import robofriendsMobile from '../assets/images/gallery/robofriends-mobile.png';
-import colorConvertDesktop from '../assets/images/gallery/colorconvert-desktop.png';
-import colorConvertMobile from '../assets/images/gallery/colorconvert-mobile.png';
-import bgGeneratorDesktop from '../assets/images/gallery/generator-desktop.png';
-import bgGeneratorMobile from '../assets/images/gallery/generator-mobile.png';
-import bromleyDesktop from '../assets/images/gallery/bromley-desktop.png';
-// import bromleyMobile from '../assets/images/gallery/bromley-mobile.png';
-import bwwDesktop from '../assets/images/gallery/bww-desktop.png';
-// import bwwMobile from '../assets/images/gallery/bww-mobile.png';
-import theResidentDesktop from '../assets/images/gallery/the-resident-desktop.png';
-// import theResidentMobile from '../assets/images/gallery/the-resident-mobile.png';
-import ghgDesktop from '../assets/images/gallery/ghg-desktop.png';
-// import ghgMobile from '../assets/images/gallery/ghg-mobile.png';
+import concentrationDesktop from '../assets/images/gallery/memory-desktop.webp';
+import concentrationMobile from '../assets/images/gallery/memory-desktop.webp';
+import robofriendsDesktop from '../assets/images/gallery/robofriends-desktop.webp';
+import robofriendsMobile from '../assets/images/gallery/robofriends-mobile.webp';
+import colorConvertDesktop from '../assets/images/gallery/colorconvert-desktop.webp';
+import colorConvertMobile from '../assets/images/gallery/colorconvert-mobile.webp';
+import bgGeneratorDesktop from '../assets/images/gallery/generator-desktop.webp';
+import bgGeneratorMobile from '../assets/images/gallery/generator-mobile.webp';
+import bromleyDesktop from '../assets/images/gallery/bromley-desktop.webp';
+// import bromleyMobile from '../assets/images/gallery/bromley-mobile.webp';
+import bwwDesktop from '../assets/images/gallery/bww-desktop.webp';
+// import bwwMobile from '../assets/images/gallery/bww-mobile.webp';
+import theResidentDesktop from '../assets/images/gallery/the-resident-desktop.webp';
+// import theResidentMobile from '../assets/images/gallery/the-resident-mobile.webp';
+import ghgDesktop from '../assets/images/gallery/ghg-desktop.webp';
+// import ghgMobile from '../assets/images/gallery/ghg-mobile.webp';
 
-// import bgGeneratorDesktop from '../assets/images/gallery/generator-desktop.png';
-// import bgGeneratorMobile from '../assets/images/gallery/generator-mobile.png';
+// import bgGeneratorDesktop from '../assets/images/gallery/generator-desktop.webp';
+// import bgGeneratorMobile from '../assets/images/gallery/generator-mobile.webp';
 
 export const projects = [
 	{
