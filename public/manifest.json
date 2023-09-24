@@ -18,8 +18,12 @@
 			"type": "image/png"
 		}
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#f0f0f0",
+  "icon": "/android-chrome-192x192.png",
+  "icon_options": {
+    "purpose": "any maskable"
+  },
 }
