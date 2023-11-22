@@ -83,9 +83,6 @@ export default function Navbar() {
 					<a href='#about'>Christine Trant</a>
 				</div>
 				<nav className='navbar'>
-					<a href='#projects' className='slide-in'>
-						Past Work
-					</a>
 					<a href='#skills' className='slide-in'>
 						Skills
 					</a>

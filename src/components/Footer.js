@@ -59,9 +59,6 @@ const Footer = () => {
 		<FooterStyles>
 			<div className='footer-wrapper'>
 				<nav className='navbar'>
-					<a href='#projects' className='slide-in'>
-						Past Work
-					</a>
 					<a href='#skills' className='slide-in'>
 						Skills
 					</a>
