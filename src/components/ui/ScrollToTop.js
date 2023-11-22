@@ -6,14 +6,13 @@ import styled from 'styled-components';
 const ScrollToTopButton = styled.button`
 	/* display: none; */
 	position: fixed;
-	bottom: 15px;
-	right: 0px;
+	bottom: 30px;
+	right: 15px;
 	z-index: 99;
 	border: none;
 	outline: none;
 	color: white;
 	cursor: pointer;
-	padding: 15px;
 	border-radius: 4px;
 	color: #ce4c6e;
 	background: transparent;
