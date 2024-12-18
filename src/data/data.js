@@ -15,6 +15,8 @@ import theResidentDesktop from '../assets/images/gallery/the-resident-desktop.we
 import theResidentMobile from '../assets/images/gallery/the-resident-mobile.webp';
 import ghgDesktop from '../assets/images/gallery/ghg-desktop.webp';
 import ghgMobile from '../assets/images/gallery/ghg-mobile.webp';
+import kirkerDesktop from '../assets/images/gallery/kirker-desktop.webp';
+import kirkerMobile from '../assets/images/gallery/kirker-mobile.webp';
 
 // import bgGeneratorDesktop from '../assets/images/gallery/generator-desktop.webp';
 // import bgGeneratorMobile from '../assets/images/gallery/generator-mobile.webp';
@@ -100,11 +102,22 @@ export const projects = [
 	{
 		title: 'Good Hotel Guide',
 		tech: 'Gatsby, Styled Components, GraphQl, Sanity CMS, Netlify',
-		description: 'Coming Soon! A new bespoke design for the Good Hotel Guide',
+		description: '',
 		desktopImage: ghgDesktop,
 		mobileImage: ghgMobile,
 		codeRepo: '',
-		link: '',
+		link: 'https://gooodhotelguide.com/',
+		liveSite: true,
+	},
+	{
+		title: 'Kirker Holidays',
+		tech: 'Gatsby, Styled Components, GraphQl, Sanity CMS, Netlify',
+		description: '',
+		desktopImage: kirkerDesktop,
+		mobileImage: kirkerMobile,
+		codeRepo: '',
+		link: 'https://www.kirkerholidays.com/',
+		liveSite: true,
 	},
 	// {
 	// 	title: '',
