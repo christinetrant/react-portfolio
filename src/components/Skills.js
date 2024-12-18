@@ -9,7 +9,7 @@ import { BsCodeSlash } from 'react-icons/bs';
 import { HiCpuChip } from 'react-icons/hi2';
 // Import Assets
 import cvIcon from '../assets/images/cv-icon.svg';
-import cvPdf from '../assets/files/Christine_Trant_CV_2023.pdf';
+import cvPdf from '../assets/files/Christine_Trant_CV_2024.pdf';
 // Import Data
 import { skills } from '../data/data';
 
