@@ -32,17 +32,17 @@ export const projects = [
 		link: 'https://christinetrant.github.io/z2mChallenge14-MemoryGame/',
 		featuredProject: true,
 	},
-	{
-		title: 'RoboFriends',
-		tech: 'React, CSS',
-		description:
-			'A React App to search through robots by name and update cards.',
-		desktopImage: robofriendsDesktop,
-		mobileImage: robofriendsMobile,
-		codeRepo: 'https://github.com/christinetrant/robofriends',
-		link: 'https://christinetrant.github.io/robofriends/',
-		featuredProject: false,
-	},
+	// {
+	// 	title: 'RoboFriends',
+	// 	tech: 'React, CSS',
+	// 	description:
+	// 		'A React App to search through robots by name and update cards.',
+	// 	desktopImage: robofriendsDesktop,
+	// 	mobileImage: robofriendsMobile,
+	// 	codeRepo: 'https://github.com/christinetrant/robofriends',
+	// 	link: 'https://christinetrant.github.io/robofriends/',
+	// 	featuredProject: false,
+	// },
 	{
 		title: 'Color Converter',
 		tech: 'Javascript, CSS, HTML',
@@ -65,7 +65,6 @@ export const projects = [
 		npmLink: 'https://www.npmjs.com/package/colorconverter-z2m',
 		featuredProject: false,
 	},
-	// TODO: ADD PROJECTS FROM UMI
 	{
 		title: 'The Bromley Court Hotel',
 		tech: 'Wordpress, PHP, SCSS, Javascript',
