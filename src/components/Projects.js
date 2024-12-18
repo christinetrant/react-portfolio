@@ -152,7 +152,7 @@ const ProjectsSection = styled.section`
 						filter: blur(2px);
 					}
 					.gallery-item_content {
-						background-color: rgba(120, 73, 112, 0.5);
+						background-color: rgba(120, 73, 112, 0.75);
 						opacity: 1;
 					}
 				}
@@ -173,7 +173,8 @@ export default function Projects() {
 			<div className='section-wrapper'>
 				<div>
 					<div className='gallery'>
-						{projects.map((project, index) => {
+						{/* Show projects in reverse order so newest first */}
+						{[...projects].reverse().map((project, index) => {
 							const {
 								title,
 								description,
